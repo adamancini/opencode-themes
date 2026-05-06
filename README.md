@@ -32,6 +32,14 @@ Ported from the VS Code [Winter is Coming](https://github.com/johnpapa/vscode-wi
 | `winter-is-coming-dark-black` | Dark charcoal background (#282822) with the same bright foreground palette |
 | `winter-is-coming-light` | Clean light theme with blue foreground on white background |
 
+### Bearded Theme
+
+Ported from the VS Code/Zed [Bearded Theme](https://github.com/BeardedBear/bearded-theme) by BeardedBear.
+
+| Theme | Description |
+|-------|-------------|
+| `bearded-theme-arc` | Signature dark variant — deep navy background (#1c2433) with vibrant blue, green, and pink accents |
+
 ## Installation
 
 ### Global Installation
@@ -88,6 +96,12 @@ curl -o ~/.config/opencode/themes/winter-is-coming-dark-black.json \
 # Light
 curl -o ~/.config/opencode/themes/winter-is-coming-light.json \
   https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/winter-is-coming-light.json
+
+# --- Bearded Theme variants ---
+
+# Arc (signature dark variant)
+curl -o ~/.config/opencode/themes/bearded-theme-arc.json \
+  https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/bearded-theme-arc.json
 ```
 
 3. Add the theme to your `~/.config/opencode/opencode.json`:
@@ -168,6 +182,29 @@ Inside OpenCode, type `/theme` and select any of the installed variants.
 | Variable | #2f86d2 | Variables |
 | Comment | #357b42 | Comments |
 
+### Bearded Theme — Arc Variant
+
+| Role | Hex | Usage |
+|------|-----|-------|
+| Background | #1c2433 | Editor background |
+| Panel Background | #181f2c | Sidebars, panels |
+| Element Background | #253043 | Inputs, selections |
+| Foreground | #d0d7e4 | Primary text |
+| Primary | #8196b5 | Links, active elements, headings |
+| Secondary | #69c3ff | Alternate accent, functions |
+| Accent | #f38cec | Standout highlights, decorators |
+| Error | #e35535 | Errors, removed diffs, constants |
+| Warning | #ff955c | Warnings, accessors, numbers |
+| Success | #3cec85 | Success, added diffs, strings |
+| Info | #69c3ff | Info highlights |
+| Keyword | #eacd61 | Keywords, operators |
+| Function | #69c3ff | Functions |
+| Type | #b78aff | Types, classes |
+| Variable | #ff738a | Variables |
+| String | #3cec85 | Strings |
+| Comment | #4a5e84 | Comments, muted text |
+| Cyan | #22ecdb | Storage keywords |
+
 ## Terminal Requirements
 
 For best results, ensure your terminal supports **truecolor** (24-bit color):
@@ -204,4 +241,5 @@ MIT License — see [LICENSE](LICENSE) file for details.
 - [Solarized](https://ethanschoonover.com/solarized/) by Ethan Schoonover
 - [Winter is Coming](https://github.com/johnpapa/vscode-winteriscoming) by [John Papa](https://twitter.com/john_papa)
 - Light theme co-authored by [Brian Clark](https://twitter.com/_clarkio)
+- [Bearded Theme](https://github.com/BeardedBear/bearded-theme) by [BeardedBear](https://bento.me/bearded)
 - Ported for the [OpenCode](https://opencode.ai/) CLI
