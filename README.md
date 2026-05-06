@@ -145,9 +145,10 @@ THEMES=(
   bearded-theme-aquarelle-lilac
   bearded-theme-themanopia-experimental bearded-theme-oled-experimental
 )
+# Note: Ensure $t is NOT backslash-escaped (e.g., \{t\}) or curl will 404
 for t in "${THEMES[@]}"; do
-  curl -sS -o ~/.config/opencode/themes/${t}.json \
-    https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/${t}.json
+  curl -sS -o ~/.config/opencode/themes/$t.json \
+    https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/$t.json
 done
 
 # Or install a single variant:
