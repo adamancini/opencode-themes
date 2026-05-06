@@ -34,11 +34,24 @@ Ported from the VS Code [Winter is Coming](https://github.com/johnpapa/vscode-wi
 
 ### Bearded Theme
 
-Ported from the VS Code/Zed [Bearded Theme](https://github.com/BeardedBear/bearded-theme) by BeardedBear.
+Ported from the VS Code/Zed [Bearded Theme](https://github.com/BeardedBear/bearded-theme) by BeardedBear. **64 variants** covering dark, light, high-contrast, and specialty palettes.
 
-| Theme | Description |
-|-------|-------------|
-| `bearded-theme-arc` | Signature dark variant — deep navy background (#1c2433) with vibrant blue, green, and pink accents |
+| Family | Variants |
+|--------|----------|
+| **Arc** | `bearded-theme-arc`, `arc-blueberry`, `arc-eggplant`, `arc-eolstorm`, `arc-reversed` |
+| **Oceanic** | `bearded-theme-oceanic`, `oceanic-reversed` |
+| **Solarized** | `bearded-theme-solarized`, `solarized-light`, `solarized-reversed` |
+| **Black &** | `black-and-amethyst`, `black-and-diamond`, `black-and-emerald`, `black-and-gold`, `black-and-ruby` (each with a `*-soft` variant) |
+| **Stained** | `bearded-theme-stained-blue`, `stained-purple` |
+| **Vivid** | `bearded-theme-vivid-black`, `vivid-light`, `vivid-purple` |
+| **Monokai** | `bearded-theme-monokai-black`, `monokai-metallian`, `monokai-reversed`, `monokai-stone`, `monokai-terra` |
+| **Coffee** | `bearded-theme-coffee`, `coffee-cream`, `coffee-reversed` |
+| **Feat** | `feat-gold-d-raynh`, `feat-melle-julie`, `feat-melle-julie-light`, `feat-mintshake-d-raynh`, `feat-webdevcody`, `feat-will` |
+| **Surprising** | `bearded-theme-surprising-blueberry`, `surprising-eggplant`, `surprising-watermelon` |
+| **HC** | `hc-brewing-storm`, `hc-chocolate-espresso`, `hc-ebony`, `hc-flurry`, `hc-midnight-void`, `hc-minuit`, `hc-wonderland-wood` |
+| **Milkshake** | `milkshake-blueberry`, `milkshake-mango`, `milkshake-mint`, `milkshake-raspberry`, `milkshake-vanilla-banana` |
+| **Aquarelle** | `aquarelle-cymbidium`, `aquarelle-hydrangea`, `aquarelle-lilac` |
+| **Other** | `altica`, `anthracite`, `earth`, `light`, `void`, `oled-experimental`, `themanopia-experimental` |
 
 ## Installation
 
@@ -99,9 +112,47 @@ curl -o ~/.config/opencode/themes/winter-is-coming-light.json \
 
 # --- Bearded Theme variants ---
 
-# Arc (signature dark variant)
-curl -o ~/.config/opencode/themes/bearded-theme-arc.json \
-  https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/bearded-theme-arc.json
+# Install all 64 variants at once
+THEMES=(
+  bearded-theme-arc bearded-theme-arc-blueberry bearded-theme-arc-eggplant
+  bearded-theme-arc-eolstorm bearded-theme-arc-reversed
+  bearded-theme-oceanic bearded-theme-oceanic-reversed
+  bearded-theme-solarized bearded-theme-solarized-light bearded-theme-solarized-reversed
+  bearded-theme-black-and-amethyst bearded-theme-black-and-amethyst-soft
+  bearded-theme-black-and-diamond bearded-theme-black-and-diamond-soft
+  bearded-theme-black-and-emerald bearded-theme-black-and-emerald-soft
+  bearded-theme-black-and-gold bearded-theme-black-and-gold-soft
+  bearded-theme-black-and-ruby bearded-theme-black-and-ruby-soft
+  bearded-theme-stained-blue bearded-theme-stained-purple
+  bearded-theme-vivid-black bearded-theme-vivid-light bearded-theme-vivid-purple
+  bearded-theme-monokai-black bearded-theme-monokai-metallian
+  bearded-theme-monokai-reversed bearded-theme-monokai-stone bearded-theme-monokai-terra
+  bearded-theme-coffee bearded-theme-coffee-cream bearded-theme-coffee-reversed
+  bearded-theme-earth bearded-theme-void bearded-theme-altica bearded-theme-anthracite
+  bearded-theme-feat-will bearded-theme-feat-gold-d-raynh
+  bearded-theme-feat-mintshake-d-raynh bearded-theme-feat-melle-julie
+  bearded-theme-feat-melle-julie-light bearded-theme-feat-webdevcody
+  bearded-theme-hc-ebony bearded-theme-hc-midnight-void bearded-theme-hc-flurry
+  bearded-theme-hc-wonderland-wood bearded-theme-hc-brewing-storm
+  bearded-theme-hc-minuit bearded-theme-hc-chocolate-espresso
+  bearded-theme-light
+  bearded-theme-surprising-eggplant bearded-theme-surprising-blueberry
+  bearded-theme-surprising-watermelon
+  bearded-theme-milkshake-raspberry bearded-theme-milkshake-blueberry
+  bearded-theme-milkshake-mango bearded-theme-milkshake-mint
+  bearded-theme-milkshake-vanilla-banana
+  bearded-theme-aquarelle-cymbidium bearded-theme-aquarelle-hydrangea
+  bearded-theme-aquarelle-lilac
+  bearded-theme-themanopia-experimental bearded-theme-oled-experimental
+)
+for t in "${THEMES[@]}"; do
+  curl -sS -o ~/.config/opencode/themes/${t}.json \
+    https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/${t}.json
+done
+
+# Or install a single variant:
+# curl -o ~/.config/opencode/themes/bearded-theme-arc.json \
+#   https://raw.githubusercontent.com/adamancini/opencode-themes/main/.opencode/themes/bearded-theme-arc.json
 ```
 
 3. Add the theme to your `~/.config/opencode/opencode.json`:
@@ -182,7 +233,9 @@ Inside OpenCode, type `/theme` and select any of the installed variants.
 | Variable | #2f86d2 | Variables |
 | Comment | #357b42 | Comments |
 
-### Bearded Theme — Arc Variant
+### Bearded Theme — Arc Variant (sample palette)
+
+Each of the 64 variants has its own distinct color palette derived directly from the upstream Zed theme export. The Arc variant is shown below as a representative example.
 
 | Role | Hex | Usage |
 |------|-----|-------|

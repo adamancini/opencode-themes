@@ -1,0 +1,251 @@
+{
+  "$schema": "https://opencode.ai/theme.json",
+  "defs": {
+    "bg": "#111418",
+    "fg": "#bec6d0",
+    "bgPanel": "#0c0f11",
+    "bgElement": "#171c20",
+    "border": "#040506",
+    "red": "#E35535",
+    "green": "#00a884",
+    "yellow": "#c7910c",
+    "blue": "#11B7D4",
+    "magenta": "#d46ec0",
+    "cyan": "#38c7bd",
+    "black": "#000000",
+    "white": "#FFFFFF",
+    "brightRed": "#e97b62",
+    "brightGreen": "#00dbac",
+    "brightYellow": "#f1b115",
+    "brightBlue": "#2ad1ee",
+    "brightMagenta": "#e095d1",
+    "brightCyan": "#60d2ca",
+    "brightBlack": "#465263",
+    "brightWhite": "#dce0e5",
+    "keyword": "#c7910c",
+    "function": "#11B7D4",
+    "string": "#00a884",
+    "constant": "#E35535",
+    "comment": "#475262",
+    "type": "#a85ff1",
+    "variable": "#c62f52",
+    "operator": "#c7910c",
+    "punctuation": "#bec6d0",
+    "emphasis": "#d4770c",
+    "primary": "#c7910c",
+    "secondary": "#11B7D4",
+    "accent": "#a85ff1",
+    "error": "#E35535",
+    "warning": "#c7910c",
+    "success": "#00a884",
+    "info": "#11B7D4",
+    "muted": "#475262",
+    "fgMain": "#bec6d0",
+    "orange": "#c7910c",
+    "purple": "#d46ec0",
+    "salmon": "#E35535",
+    "bgMid": "#0c0f11"
+  },
+  "theme": {
+    "primary": {
+      "dark": "primary",
+      "light": "primary"
+    },
+    "secondary": {
+      "dark": "secondary",
+      "light": "secondary"
+    },
+    "accent": {
+      "dark": "accent",
+      "light": "accent"
+    },
+    "error": {
+      "dark": "error",
+      "light": "error"
+    },
+    "warning": {
+      "dark": "warning",
+      "light": "warning"
+    },
+    "success": {
+      "dark": "success",
+      "light": "success"
+    },
+    "info": {
+      "dark": "info",
+      "light": "info"
+    },
+    "text": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "textMuted": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "background": {
+      "dark": "bg",
+      "light": "bg"
+    },
+    "backgroundPanel": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "backgroundElement": {
+      "dark": "bgElement",
+      "light": "bgElement"
+    },
+    "border": {
+      "dark": "border",
+      "light": "border"
+    },
+    "borderActive": {
+      "dark": "primary",
+      "light": "primary"
+    },
+    "borderSubtle": {
+      "dark": "bgMid",
+      "light": "bgMid"
+    },
+    "diffAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffContext": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "diffHunkHeader": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "diffHighlightAdded": {
+      "dark": "green",
+      "light": "green"
+    },
+    "diffHighlightRemoved": {
+      "dark": "red",
+      "light": "red"
+    },
+    "diffAddedBg": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "diffRemovedBg": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "diffContextBg": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "diffLineNumber": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "diffAddedLineNumberBg": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "diffRemovedLineNumberBg": {
+      "dark": "bgPanel",
+      "light": "bgPanel"
+    },
+    "markdownText": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "markdownHeading": {
+      "dark": "primary",
+      "light": "primary"
+    },
+    "markdownLink": {
+      "dark": "secondary",
+      "light": "secondary"
+    },
+    "markdownLinkText": {
+      "dark": "accent",
+      "light": "accent"
+    },
+    "markdownCode": {
+      "dark": "green",
+      "light": "green"
+    },
+    "markdownBlockQuote": {
+      "dark": "muted",
+      "light": "muted"
+    },
+    "markdownEmph": {
+      "dark": "accent",
+      "light": "accent"
+    },
+    "markdownStrong": {
+      "dark": "primary",
+      "light": "primary"
+    },
+    "markdownHorizontalRule": {
+      "dark": "border",
+      "light": "border"
+    },
+    "markdownListItem": {
+      "dark": "secondary",
+      "light": "secondary"
+    },
+    "markdownListEnumeration": {
+      "dark": "primary",
+      "light": "primary"
+    },
+    "markdownImage": {
+      "dark": "secondary",
+      "light": "secondary"
+    },
+    "markdownImageText": {
+      "dark": "accent",
+      "light": "accent"
+    },
+    "markdownCodeBlock": {
+      "dark": "fg",
+      "light": "fg"
+    },
+    "syntaxComment": {
+      "dark": "comment",
+      "light": "comment"
+    },
+    "syntaxKeyword": {
+      "dark": "keyword",
+      "light": "keyword"
+    },
+    "syntaxFunction": {
+      "dark": "function",
+      "light": "function"
+    },
+    "syntaxVariable": {
+      "dark": "variable",
+      "light": "variable"
+    },
+    "syntaxString": {
+      "dark": "string",
+      "light": "string"
+    },
+    "syntaxNumber": {
+      "dark": "constant",
+      "light": "constant"
+    },
+    "syntaxType": {
+      "dark": "type",
+      "light": "type"
+    },
+    "syntaxOperator": {
+      "dark": "operator",
+      "light": "operator"
+    },
+    "syntaxPunctuation": {
+      "dark": "punctuation",
+      "light": "punctuation"
+    }
+  }
+}
