@@ -177,6 +177,20 @@ For best results, ensure your terminal supports **truecolor** (24-bit color):
 
 Most modern terminals (iTerm2, Alacritty, Kitty, Windows Terminal, GNOME Terminal) support this by default.
 
+## Theme Development Skill
+
+This repository includes the **OpenCode Themer** skill — a guide for absorbing and distilling color themes from other applications (VS Code, terminal emulators, CSS, etc.) into valid OpenCode `theme.json` files.
+
+To use it, copy the skill into your OpenCode skills directory:
+
+```bash
+mkdir -p ~/.claude/skills/opencode-themer
+curl -o ~/.claude/skills/opencode-themer/SKILL.md \
+  https://raw.githubusercontent.com/adamancini/opencode-themes/main/SKILL.md
+```
+
+Restart OpenCode and mention "port a theme" or "absorb a VS Code theme" to activate the skill.
+
 ## Contributing
 
 Want to add a new theme? See the [OpenCode Theme Documentation](https://opencode.ai/docs) for the theme schema and color token reference.
